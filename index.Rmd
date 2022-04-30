@@ -31,8 +31,7 @@ library(countdown)
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 style_duo_accent(
-  primary_color = "#1E4D2B",
-  title_slide_background_color= "#1E4D2B",
+  primary_color = "#ED1B2F",
   background_color = "#FFFFFF",
   secondary_color = "#ECC530",
   inverse_header_color = "#59595B"
@@ -113,7 +112,7 @@ background-size: contain
   
 - Curva
   
-- Paraâmetros
+- Parâmetros
 
 - Número de doses (tratamentos)
 
@@ -149,7 +148,7 @@ background-size: contain
 
 --
 
-> "Todas as substâncias são venenos; não existe uma <br>que não seja veneno. A dose certa diferencia um <br>veneno de um remédio"
+> Todas as substâncias são venenos; não existe uma <br>que não seja veneno. A dose certa diferencia um <br>veneno de um remédio
 
 
 **Paracelsus**, o "pai da toxicologia"
@@ -159,9 +158,9 @@ background-size: contain
 
 ---
 
-## Dose response
+## Dose resposta
 
-#### Definition
+#### Definição
 
 > A relação dose-resposta descreve a magnitude da resposta de um organismo, em função da exposição (ou doses) a um estímulo ou estressor (geralmente um produto químico) após um determinado tempo de exposição.
 --
@@ -176,9 +175,6 @@ background-size: contain
 
 - Biologia
     - Ciência da planta daninha
-
-
-
 
 
 ---
@@ -206,6 +202,16 @@ background-size: contain
 
 .footnote[Image: CSU]
 
+
+---
+
+## Dose resposta
+
+<br><br>
+
+<center>
+<img src="images/mental.png" width="700px"/>
+</center>
 
 ---
 
@@ -295,7 +301,7 @@ plot(m)
 
 ---
 
-## Typical data variables
+## Variáveis 
 
 - Biomassa (g) ou Biomassa relativa (%)
 
@@ -319,11 +325,11 @@ countdown(minutes = 0, seconds = 30)
 
 ---
 
-## Number of data points
+## Número de doses
 
-- The shape of the dose response curve is influenced by the distribution of the data it describes
+- A forma da curva de resposta à dose é influenciada pela distribuição dos dados que ela descreve
 
-- Selection of herbicide doses is critical
+- A seleção de doses de herbicidas é crítica
 
 ```{r message = FALSE, warning = FALSE, echo = FALSE, fig.align='center', out.width='40%', fig.height = 6, fig.width = 6}
 dose <- 1:2
@@ -335,10 +341,10 @@ plot(m)
 
 ---
 
-## Dose response analysis
+## Análise de dose resposta
 
 .panelset[
-.panel[.panel-name[Dataset]
+.panel[.panel-name[Dados]
 ```{r}
 library(RCurl)
 library(tidyverse)
@@ -349,7 +355,7 @@ dose
 ]
 
 
-.panel[.panel-name[Model and parameters]
+.panel[.panel-name[Modelo e parâmetros]
 
 
 ```{r}
@@ -363,9 +369,9 @@ plot(model)
 ```
 
 ]
-.panel[.panel-name[Plot]
+.panel[.panel-name[Figura]
 <center>
-<img src="index_files/figure-html/unnamed-chunk-19-1.png" >
+<img src="index_files/figure-html/unnamed-chunk-7-1.png" >
 </center>
 ]
 
@@ -374,22 +380,43 @@ plot(model)
 
 ---
 
-## Take home message
+## Análise de dose resposta
 
-- Dose response relationship is best describe with a sigmoid curve and log-logistic models
 
-- Selection of herbicide doses is critical
+.pull-left[
+<center>
+<img src="images/hemp.png" width="350px"/>
+</center>
+]
 
-- Dose response uses in herbicide-weed research
-    - Herbicide efficacy
+
+.pull-right[
+<br>
+<center>
+<img src="https://njaes.rutgers.edu/fs1312/fs1312-main-1.jpg" width="450px"/>
+</center>
+
+.footnote[Fonte: [Ortmeier-Clarke et al. (2022)](https://www.cambridge.org/core/journals/weed-technology/article/doseresponse-screening-of-industrial-hemp-to-herbicides-commonly-used-in-corn-and-soybean/69E006EA853CF57E2389C865CFD6E27C)]
+]
+
+---
+
+## Mensagem para levar para casa
+
+- A relação dose-resposta é melhor descrita com uma curva sigmóide e modelos log-logísticos
+
+- A seleção de doses de herbicidas é crítica
+
+- Usos de resposta à dose na pesquisa de plantas daninhas de herbicidas
+  - Eficácia de herbicida
     
-    - Herbicide resistance
+  - Resistência a herbicidas
     
-    - Crop tolerance
+  - Tolerância de culturas
 
-- Model parameters should have biological meaning
+- Os parâmetros do modelo devem ter significado biológico
 
-- Dose response can be performed using **R**, SAS or other statistical software
+- A dose resposta pode ser realizada usando **R**, SAS ou outro software estatístico
 
 
 
@@ -401,9 +428,9 @@ class: right, middle, blue
 
 <img style="border-radius: 50%;" src="images/foto.jpg" width="150px"/>
 
-# Thank you!
+# Obrigado!
 
-#### You can find me at...
+#### Você pode me encontrar em...
 
 [`r icon_style(fontawesome("github"), style = "solid")` @maxwelco](https://github.com/maxwelco)  
 [`r icon_style(fontawesome("twitter"), style = "solid")` @maxwelco](https://twitter.com/maxwelco)  
