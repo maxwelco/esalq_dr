@@ -106,7 +106,7 @@ background-size: contain
 ## Agenda
 
 
-- Breve história da dose responsta
+- Breve história da dose resposta
 
 - Definição e usos
   
@@ -179,7 +179,7 @@ background-size: contain
 
 ---
 
-## Dose responsta
+## Dose resposta
 
 #### Ciência da planta daninha
 
@@ -215,7 +215,7 @@ background-size: contain
 
 ---
 
-## A curva de dose responsta
+## A curva de dose resposta
 
 > Uma **curva dose-resposta** é um gráfico de coordenadas que relaciona a magnitude de uma dose (estímulo) à resposta de um sistema biológico
 --
@@ -233,7 +233,7 @@ countdown(minutes = 0, seconds = 30)
 
 ---
 
-## A curva de dose responsta
+## A curva de dose resposta
 
 #### Equação
 
@@ -262,10 +262,10 @@ $$
 
 ---
 
-## A curva de dose responsta
+## A curva de dose resposta
 
 .pull-left[
-#### Paraâmetros
+#### Parâmetros
 
 - Limite superior, d
 
@@ -291,7 +291,7 @@ plot(m)
 
 ---
 
-## A curva de dose responsta
+## A curva de dose resposta
 
 <center>
 <img src="images/curve2.png" width="500px"/>

@@ -1,9 +1,0 @@
----
-title: "exercises"
-author: "Maxwel Coura Oliveira"
-date: "4/30/2022"
-output: html_document
----
-
-
-
